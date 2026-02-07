@@ -1,5 +1,13 @@
 import { Droplets, Wrench, Settings, Truck, Wind, Disc, Zap } from 'lucide-react';
 
+// Afbeelding imports
+import img1152 from './assets/1152.jpg';
+import img160 from './assets/160.jpg';
+import img895 from './assets/895.jpg';
+import img32 from './assets/32.webp';
+import img800 from './assets/800.webp';
+import img1200 from './assets/1200.webp';
+
 export const COMPANY_INFO = {
   name: "Haetech",
   fullName: "Haetech Carwash & Reiniging",
@@ -32,7 +40,7 @@ export const CATALOG_PRODUCTS = [
     category: "Koudwater Hogedruk",
     shortDesc: "De absolute bestseller voor semiprofessioneel gebruik.",
     description: "De Kränzle K 1152 TST is de opvolger van de legendarische K 1151 TST. Deze hogedrukreiniger staat bekend om zijn robuustheid, Roto-Mold chassis en geïntegreerde slangtrommel. Ideaal voor veeleisende particulieren en professionals.",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop",
+    image: img1152,
     features: [
       "Roto-Mold onderstel uit één stuk",
       "Geïntegreerde slangtrommel (15m)",
@@ -54,7 +62,7 @@ export const CATALOG_PRODUCTS = [
     category: "Koudwater Hogedruk",
     shortDesc: "Continue inzetbaarheid voor zwaar industrieel gebruik.",
     description: "De Profi-serie is ontwikkeld voor continu industrieel gebruik. Belangrijke onderdelen zoals de drijfstangen en pomp zijn overgedimensioneerd voor een extreem lange levensduur. Voorzien van een geïntegreerd waterreservoir.",
-    image: "https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?q=80&w=1000&auto=format&fit=crop",
+    image: img160,
     features: [
       "Geïntegreerd waterreservoir",
       "Roto-Mold chassis",
@@ -76,7 +84,7 @@ export const CATALOG_PRODUCTS = [
     category: "Warmwater Therm",
     shortDesc: "Krachtige warmwaterreiniger met hoge capaciteit.",
     description: "De Kränzle Therm-serie combineert bewezen techniek met een modern design en innovatieve verbrandingstechnologie. Uitermate geschikt voor het verwijderen van vetten, oliën en hardnekkig vuil in de landbouw of automotive sector.",
-    image: "https://images.unsplash.com/photo-1605218427306-633ba87142bd?q=80&w=1000&auto=format&fit=crop",
+    image: img895,
     features: [
       "Optische vlambewaking",
       "Digitaal bedieningspaneel",
@@ -98,7 +106,7 @@ export const CATALOG_PRODUCTS = [
     category: "Stofzuigers",
     shortDesc: "Nat- en droogzuiger voor de werkplaats.",
     description: "De Ventos 32 L/PC is een veelzijdige alleskunner. Perfect voor het zuigen van vloeistoffen en droog stof in werkplaatsen, garages en op de bouwplaats. Voorzien van automatische filterreiniging.",
-    image: "https://images.unsplash.com/photo-1527512860502-38531548e698?q=80&w=1000&auto=format&fit=crop",
+    image: img32,
     features: [
       "Push-Clean filterreiniging",
       "Automatische inschakeling bij elektrisch gereedschap",
@@ -120,7 +128,7 @@ export const CATALOG_PRODUCTS = [
     category: "Veegmachines",
     shortDesc: "Manuele veegmachine voor grote oppervlakken.",
     description: "De Kränzle Colly 800 maakt vegen eenvoudig. Met zijn dubbele zijborstels reinigt hij snel en efficiënt opritten, terrassen, en bedrijfshallen. Geen stroom nodig, werkt puur mechanisch en licht.",
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1000&auto=format&fit=crop",
+    image: img800,
     features: [
       "Dubbele zijborstels",
       "Opklapbare duwbeugel",
@@ -142,7 +150,7 @@ export const CATALOG_PRODUCTS = [
     category: "Koudwater Hogedruk",
     shortDesc: "Topklasse koudwaterreiniger met extreem vermogen.",
     description: "De Quadro-serie combineert kracht met stabiliteit. Door het onderstel met 4 wielen is deze machine zeer stabiel en makkelijk verrijdbaar op ruw terrein. Een krachtpatser voor de zware industrie.",
-    image: "https://images.unsplash.com/photo-1632924194770-3498b584a226?q=80&w=1000&auto=format&fit=crop",
+    image: img1200,
     features: [
       "Zeer stabiel 4-wiel onderstel",
       "Grote RVS manometer",
@@ -160,4 +168,4 @@ export const CATALOG_PRODUCTS = [
   }
 ];
 
-export const KRANZLE_CATEGORIES = CATALOG_PRODUCTS; // Re-use for compatibility if needed, but we will switch to full catalog logic
+export const KRANZLE_CATEGORIES = CATALOG_PRODUCTS;

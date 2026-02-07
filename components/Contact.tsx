@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, FileText } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 
 const Contact: React.FC = () => {
@@ -20,17 +20,19 @@ const Contact: React.FC = () => {
                 <h4 className="text-2xl font-bold text-gray-900 mb-8">Contactgegevens</h4>
                 
                 <div className="space-y-8">
+                    {/* Adres & Bedrijfsnaam */}
                     <div className="flex items-start gap-4 group">
                         <div className="bg-haetech/10 p-3 rounded-full text-haetech group-hover:bg-haetech group-hover:text-white transition-colors">
                             <MapPin size={24} />
                         </div>
                         <div>
-                            <p className="font-bold text-gray-900">Adres</p>
+                            <p className="font-bold text-gray-900">Haetech B.V.</p>
                             <p className="text-gray-600">{COMPANY_INFO.address}</p>
                             <p className="text-gray-600">{COMPANY_INFO.zipCity}</p>
                         </div>
                     </div>
 
+                    {/* Telefoon */}
                     <div className="flex items-start gap-4 group">
                         <div className="bg-haetech/10 p-3 rounded-full text-haetech group-hover:bg-haetech group-hover:text-white transition-colors">
                             <Phone size={24} />
@@ -43,6 +45,7 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
 
+                    {/* E-mail */}
                     <div className="flex items-start gap-4 group">
                         <div className="bg-haetech/10 p-3 rounded-full text-haetech group-hover:bg-haetech group-hover:text-white transition-colors">
                             <Mail size={24} />
@@ -55,6 +58,7 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
 
+                    {/* Openingstijden */}
                     <div className="flex items-start gap-4 group">
                         <div className="bg-haetech/10 p-3 rounded-full text-haetech group-hover:bg-haetech group-hover:text-white transition-colors">
                             <Clock size={24} />
@@ -65,6 +69,18 @@ const Contact: React.FC = () => {
                             <p className="text-gray-600">Zaterdag & Zondag: Gesloten</p>
                         </div>
                     </div>
+
+                    {/* KVK */}
+                    <div className="flex items-start gap-4 group">
+                        <div className="bg-haetech/10 p-3 rounded-full text-haetech group-hover:bg-haetech group-hover:text-white transition-colors">
+                            <FileText size={24} />
+                        </div>
+                        <div>
+                            <p className="font-bold text-gray-900">Kamer van Koophandel</p>
+                            <p className="text-gray-600">98665855</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
