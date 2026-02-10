@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import haetechLogo from '../assets/haetechlogo.png';
-import background from '../assets/Background.jpg'; // De foto die we nu gebruiken
+import background from '../assets/Achtergrond_website.png'; // De foto die we nu gebruiken
 
 const Hero: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://mikkers-car-care.nl/wp-content/uploads/2023/02/wasbeurt-3-mikkers-car-care.png" 
+          src={background}
           alt="Haetech Carwash Achtergrond" 
           className="w-full h-full object-cover" // object-cover zorgt dat de foto het hele scherm vult zonder vervorming
         />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Check, Phone, FileText } from 'lucide-react';
+import { X, Check, Phone, FileText, FileDown } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 
 interface ProductModalProps {
@@ -84,6 +84,21 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
             </div>
 
             <div className="mt-auto pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
+                
+                {/* PDF Download Button - Alleen zichtbaar als product.pdf bestaat */}
+                {product.pdf && (
+                  <a 
+                    href={product.pdf}
+                    download
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 bg-haetech hover:bg-haetech-dark text-white font-bold py-3 px-6 rounded-lg text-center transition-colors flex items-center justify-center gap-2"
+                  >
+                    <FileDown size={18} />
+                    Brochure
+                  </a>
+                )}
+
                 <a 
                     href={`https://wa.me/${COMPANY_INFO.cleanPhone}?text=Ik%20heb%20interesse%20in%20de%20${encodeURIComponent(product.name)}`}
                     target="_blank"
@@ -91,7 +106,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
                     className="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3 px-6 rounded-lg text-center transition-colors flex items-center justify-center gap-2"
                 >
                     <Phone size={18} />
-                    App over dit product
+                    App
                 </a>
                  <a 
                     href="#contact"
@@ -103,7 +118,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, product })
                     }}
                     className="flex-1 bg-footer hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg text-center transition-colors"
                 >
-                    Offerte aanvragen
+                    Offerte
                 </a>
             </div>
         </div>
